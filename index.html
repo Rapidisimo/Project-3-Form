@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>P3-Online Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>THE CODE REVIEW</h1>
+    </header>
+    <section class="info">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </section>
+    <section class="contact">
+        <form action="#" method="post">
+            <fieldset id="contact-info">
+                <legend>Contact Information</legend>
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="user-name" placeholder="Required"><br>
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" name="user-email" placeholder="Required"><br>
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" name="user-phone"><br>
+                <label for="address1">Street Address</label><br>
+                <input type="text" id="address1" name="user-address1"><br>
+                <label for="city">City</label><br>
+                <input type="text" id="city" name="user-city"><br>
+                <label for="user-states">State</label><br>
+                <input list="states" id="user-states" name="user-states" placeholder="Choose State">
+                    <datalist id="states">
+                        <option value="CA"></option>
+                        <option value="TX"></option>
+                        <option value="NY"></option>
+                    </datalist><br>
+                <label for="zip">Zip Code</label><br>
+                <input type="text" name="user-zip" id="zip">
+            </fieldset>
+            <div class="line"></div>
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p>Select the newsletters you would like to receive</p>
+                <input type="checkbox" name="html-news" id="html" checked>
+                <label for="html">HTML News</label><br>
+                <input type="checkbox" name="css-news" id="css">
+                <label for="css">CSS News</label><br>
+                <input type="checkbox" name="js-news" id="js">
+                <label for="js">Javascript News</label><br><br>
+                <p>Newsletter format</p>
+                <input type="radio" name="newsletter" id="html-format" checked>
+                <label for="html-format">HTML</label><br>
+                <input type="radio" name="newsletter" id="text-format">
+                <label for="text-format">Plain text</label><br><br><br>
+                <label for="topics">Other topics you'd like to hear about</label><br>
+                <textarea name="other-topics" id="topics" cols="28" rows="5"></textarea>
+                <button type="submit">Sign Up</button>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+</html>
