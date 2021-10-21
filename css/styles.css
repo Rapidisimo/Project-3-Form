@@ -67,6 +67,39 @@ footer {
 }
 
 /* Form Elements */
+
+/* flex-box mobile version */
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.2em;
+}
+.form-row label {
+    flex-basis: 100%;
+}
+.form-row input {
+    flex-basis: 100%;
+    padding: 1em;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(239, 240, 241);
+
+}
+.form-row label#zippy {
+    flex-basis: 100%;
+}
+.form-row input#zip {
+    flex-basis: 40%;
+}
+
+.form-row label {
+    padding: 1em 1em 1em 0;
+}
+
+/* flex-box mobile version */
+
+
 label {
     color: rgb(110, 125, 141);
     font-size: 1em;
