@@ -54,6 +54,10 @@ p {
 .line {
     border-bottom: 2px solid black;
     margin-top: 2em;
+    margin-bottom: 2em;
+}
+.newsletter p {
+    color: rgb(110, 125, 141);
 }
 
 footer {
@@ -65,12 +69,13 @@ footer {
 /* Form Elements */
 label {
     color: rgb(110, 125, 141);
-    font-size: 1.1em;
+    font-size: 1em;
 }
-label[for="topics"] {
+/* label[for="topics"] {
     color: rgb(170, 175, 180);
-}
-#contact-info input {
+} */
+
+/* #contact-info input {
     margin-top: .5em;
     margin-bottom: .8em;
     padding: 1em;
@@ -78,7 +83,7 @@ label[for="topics"] {
     border-radius: 5px;
     border: 0;
     background-color: rgb(239, 240, 241);
-}
+} */
 input:focus {
     outline: none;
     border: solid 2px rgb(70, 105, 139);
@@ -111,7 +116,9 @@ input[type="radio"] {
     margin-top: 1em;
     margin-right: .5em;
 }
-
+input#zip {
+    width: 30%;
+}
 
 textarea {
     width: 100%;
@@ -129,4 +136,65 @@ button {
     margin-top: 1.4em;
     margin-bottom: 1em;
     width: 100%;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .info,
+    .contact {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info h2 {
+        margin-top: 3em;
+    }
+    .info p {
+        padding-bottom: 1em;
+    }
+
+    .form-row {
+        display: flex;
+        margin-bottom: 1.2em;
+    }
+    .form-row label {
+        flex: 1;
+    }
+    .form-row input {
+        flex: 3;
+        padding: 1em;
+        border-radius: 5px;
+        border: 0;
+        background-color: rgb(239, 240, 241);
+
+    }
+    .form-row label#zippy {
+        flex: .25;
+    }
+    .form-row input#zip {
+        flex: .2;
+    }
+
+    .form-row label {
+        padding: 1em 1em 1em 0;
+    }
+
+
+
+    /* form {
+        display: flex;
+    }
+    fieldset {
+        flex-wrap: nowrap;
+    }
+    label {
+        flex: 1;
+    }
+    .contact[type="input"] {
+        flex: 2;
+    } */
+
+    }
 }
