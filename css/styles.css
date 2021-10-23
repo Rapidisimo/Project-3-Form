@@ -101,20 +101,24 @@ label {
     color: rgb(110, 125, 141);
     font-size: 1em;
 }
+input {
+    transition: all .2s ease-in;
+}
 input:focus {
-    outline: none;
-    border: solid 2px rgb(70, 105, 139);
+    outline: rgb(70, 105, 139) solid;
+    border: solid 1px rgb(70, 105, 139);
 }
 
-#name::placeholder,
-#email::placeholder {
+input::placeholder,
+textarea::placeholder {
     font-style: italic;
     text-align: right;
     color: rgb(170, 175, 180);
 }
-#user-states::placeholder {
-    color: rgb(170, 175, 180);
-
+#user-states::placeholder,
+textarea::placeholder {
+    text-align: left;
+    font-style: normal;
 }
 
 fieldset {
@@ -153,6 +157,15 @@ button {
     margin-top: 1.4em;
     margin-bottom: 1em;
     width: 100%;
+}
+#contact-info legend {
+    padding-top: 2em;
+}
+#contact-info,
+.newsletter {
+    background-color: rgba(145, 116, 65, .04);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 /******** Media Queries ********/
@@ -197,5 +210,13 @@ button {
     .form-row label {
         padding: 1em 1em 1em 0;
     }
+    input {
+        transition: all .2s ease-in;
+    }
+    input:focus {
+        outline: rgb(70, 105, 139) solid;
+        border: solid 1px rgb(70, 105, 139);
+    }
+    
 
 }
