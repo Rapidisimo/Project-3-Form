@@ -77,7 +77,8 @@ footer {
 .form-row label {
     flex-basis: 100%;
 }
-.form-row input {
+.form-row input,
+.form-row select {
     flex-basis: 100%;
     padding: 1em;
     border-radius: 5px;
@@ -89,7 +90,7 @@ footer {
     flex-basis: 100%;
 }
 .form-row input#zip {
-    flex-basis: 40%;
+    flex-basis: 50%;
 }
 
 .form-row label {
@@ -101,16 +102,19 @@ label {
     color: rgb(110, 125, 141);
     font-size: 1em;
 }
-input {
+input,
+select {
     transition: all .2s ease-in;
 }
-input:focus {
+input:focus,
+select:focus {
     outline: rgb(70, 105, 139) solid;
     border: solid 1px rgb(70, 105, 139);
 }
 
 input::placeholder,
-textarea::placeholder {
+textarea::placeholder,
+select:invalid {
     font-style: italic;
     text-align: right;
     color: rgb(170, 175, 180);
@@ -119,6 +123,9 @@ textarea::placeholder {
 textarea::placeholder {
     text-align: left;
     font-style: normal;
+}
+textarea {
+    padding: .5em;
 }
 
 fieldset {
@@ -136,9 +143,6 @@ input[type="checkbox"],
 input[type="radio"] {
     margin-top: 1em;
     margin-right: .5em;
-}
-input#zip {
-    width: 30%;
 }
 
 textarea {
@@ -192,7 +196,8 @@ button {
     .form-row label {
         flex: 1;
     }
-    .form-row input {
+    .form-row input,
+    .form-row select {
         flex: 3;
         padding: 1em;
         border-radius: 5px;
@@ -201,22 +206,23 @@ button {
 
     }
     .form-row label#zippy {
-        flex: .25;
+        flex: .39;
     }
     .form-row input#zip {
-        flex: .2;
+        flex: .25;
     }
 
     .form-row label {
         padding: 1em 1em 1em 0;
     }
-    input {
+    input,
+    select {
         transition: all .2s ease-in;
     }
-    input:focus {
+    input:focus,
+    select:focus {
         outline: rgb(70, 105, 139) solid;
         border: solid 1px rgb(70, 105, 139);
     }
-    
 
 }

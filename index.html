@@ -45,16 +45,16 @@
                 </div>
                 <div class="form-row">
                     <label for="city">City</label>
-                    <input type="text" id="city" name="user-city" placeholder="Full Name">
+                    <input type="text" id="city" name="user-city" placeholder="Full City Name">
                 </div>
                 <div class="form-row">
                     <label for="user-states">State</label>
-                    <input list="states" id="user-states" name="user-states" placeholder="Choose State">
-                        <datalist id="states">
-                            <option value="CA"></option>
-                            <option value="TX"></option>
-                            <option value="NY"></option>
-                        </datalist>
+                    <select name="user-states" id="user-states" required>
+                        <option value="" disabled selected hidden>Choose State (Required)</option>
+                        <option value="CA">CA</option>
+                        <option value="TX">TX</option>
+                        <option value="NY">NY</option>
+                    </select>
                 </div>
                 <div class="form-row">
                     <label for="zip" id="zippy">Zip Code</label>
