@@ -96,8 +96,7 @@ footer {
 
 }
 .zip-form-row input {
-    flex-basis: 25%;
-    width: 160px;
+    max-width: 50%;
     padding: 1em;
     border-radius: 5px;
     border: 0;
@@ -212,11 +211,11 @@ button {
         margin-bottom: 1.2em;
     }
     .form-row label {
-        flex: 1;
+        flex-basis: 25%;
     }
     .form-row input,
     .form-row select {
-        flex: 3;
+        flex-basis: 75%;
         padding: 1em;
         border-radius: 5px;
         border: 0;
@@ -240,13 +239,12 @@ button {
         display: flex;
     }
     .zip-form-row label {
-        flex-basis: 26%;
+        flex-basis: 25%;
         padding: 1em 1em 1em 0;
 
     }
     .zip-form-row input {
-        flex-basis: 25%;
-        width: 100px;
+        max-width: 25%;
         padding: 1em;
         border-radius: 5px;
         border: 0;
